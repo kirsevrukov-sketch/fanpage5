@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Астрид</title>
+  <link rel="stylesheet" href="astrid.css">
+   <link rel="icon" type="image/x-icon" href="images/android-chrome-192x192.png">
+</head>
+<body>
+  <header>
+   <a href="1.html">
+     <h1>Астрид Хофферсон</h1>
+   </a>
+
+    <p class="intro">
+      Астрид — храбрая и решительная воительница из деревни викингов. 
+      Она отличается силой духа, преданностью друзьям и стремлением к справедливости.
+    </p>
+
+    <div class="carousel">
+    <img src="images/astrid1.jpg"  onclick="openModal(this)">
+    <img src="images/astrid2.jpg"  onclick="openModal(this)">
+    <img src="images/astrid3.jpg"  onclick="openModal(this)">
+    <img src="images/astrid4.jpg"  onclick="openModal(this)">
+  </div>
+
+
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+  <span class="next" onclick="changeImage(1)">&#10095;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
+
+  </header>
+
+
+<main>
+
+<blockquote>
+   Ну ладно, признаю, это очень круто! Это потрясающе! Он потрясающий! 
+</blockquote>
+
+
+
+  <div class="buttons-row">
+    <button class="tab-btn" onclick="showBlock('childhood')">
+      <img  src="images/astrid5.jpg" alt="Детство">
+    </button>
+
+    <button class="tab-btn" onclick="showBlock('youth')">
+      <img  src="images/astrid6.jpg" alt="Молодость">
+    </button>
+
+    <button class="tab-btn" onclick="showBlock('adulthood')">
+      <img  src="images/astrid7.jpg" alt="Взрослая жизнь">
+    </button>
+
+  </div>
+
+
+  <div class="content-block" id="childhood">
+  <h2>Детство</h2>
+
+  <p>
+    В детстве Астрид росла в суровой среде викингов, где ценились сила и смелость.
+    Она с ранних лет тренировалась владеть оружием и стремилась доказать свою храбрость.
+  </p>
+
+
+ <div class="carousel-fourth">
+  <div class="carousel-track-fourth">
+    <img src="images/astridyoung1.jpg" alt="Фото 1" class="carousel-item-fourth">
+    <img src="images/astridyoung2.jpg" alt="Фото 2" class="carousel-item-fourth">
+    <img src="images/astridyoung3.jpg" alt="Фото 3" class="carousel-item-fourth">
+    <img src="images/astridyoung4.jpg" alt="Фото 4" class="carousel-item-fourth">
+    <img src="images/astridyoung5.jpg" alt="Фото 5" class="carousel-item-fourth">
+  </div>
+
+  
+  <button class="carousel-btn-fourth prev-fourth">‹</button>
+  <button class="carousel-btn-fourth next-fourth">›</button>
+</div>
+
+
+<div class="modal-fourth" id="modal-fourth">
+  <span class="close-fourth">&times;</span>
+  <img class="modal-content-fourth" id="modal-img-fourth">
+  <div id="caption-fourth"></div>
+
+  
+  <button class="modal-btn-fourth prev-modal-fourth">‹</button>
+  <button class="modal-btn-fourth next-modal-fourth">›</button>
+</div>
+
+
+
+
+  </div>
+
+
+  
+  <div class="content-block" id="youth">
+    <h2>Молодость</h2>
+    <p>
+      В юности Астрид стала одной из лучших воительниц деревни. 
+      Её решимость и дисциплина выделяли её среди сверстников. 
+      В это время она познакомилась с Иккингом и постепенно стала его союзником.
+    </p>
+
+<div class="carousel-second">
+  <div class="carousel-track-second">
+    <img src="images/Astrid - How to train your dragon 2.jpg" alt="Фото 1" class="carousel-item-second">
+    <img src="images/Astrid.gif" alt="Фото 2" class="carousel-item-second">
+    <img src="images/astrid10.jpg" alt="Фото 3" class="carousel-item-second">
+    <img src="images/astrid11.jpg" alt="Фото 4" class="carousel-item-second">
+    <img src="images/astrid13.jpg" alt="Фото 5" class="carousel-item-second">
+  </div>
+
+
+  <button class="carousel-btn-second prev-second">‹</button>
+  <button class="carousel-btn-second next-second">›</button>
+</div>
+
+
+
+<div class="modal-second" id="modal-second">
+  <span class="close-second">&times;</span>
+  <img class="modal-content-second" id="modal-img-second">
+
+  
+  <button class="modal-btn-second prev-modal-second">‹</button>
+  <button class="modal-btn-second next-modal-second">›</button>
+</div>
+
+    
+  </div>
+
+  <div class="content-block" id="adulthood">
+    <h2>Взрослая жизнь</h2>
+    <p>
+      Повзрослев, Астрид стала мудрой и сильной лидершей. 
+      Она участвовала в защите деревни, поддерживала Иккинга в его лидерстве и 
+      внесла огромный вклад в мирное сосуществование людей и драконов.
+    </p>
+
+  <div class="carousel-third">
+  <div class="carousel-track-third">
+    <img src="images/astrid41.jpg" alt="Фото 1" class="carousel-item-third">
+    <img src="images/astrid42.jpg" alt="Фото 2" class="carousel-item-third">
+    <img src="images/astrid43.jpg" alt="Фото 3" class="carousel-item-third">
+    <img src="images/astrid44.jpg" alt="Фото 4" class="carousel-item-third">
+    <img src="images/astrid45.jpg" alt="Фото 5" class="carousel-item-third">
+  </div>
+
+
+  <button class="carousel-btn-third prev-third">‹</button>
+  <button class="carousel-btn-third next-third">›</button>
+</div>
+
+
+<div class="modal-third" id="modal-third">
+  <span class="close-third">&times;</span>
+  <img class="modal-content-third" id="modal-img-third">
+  <div id="caption-third"></div>
+
+ 
+  <button class="modal-btn-third prev-modal-third">‹</button>
+  <button class="modal-btn-third next-modal-third">›</button>
+</div>
+
+
+
+
+  </div>
+  
+  </main>
+  
+  <footer>
+
+ <div class="footer-social">
+    <a href="https://www.instagram.comclass=" class="icon" target="_blank">
+      <img src="images/Insta.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com/watch?v=W6DtuM9TrvM" class="icon" target="_blank">
+      <img src="images/youtube.jpg" alt="youtube">
+    </a>
+    <a href="https://music.yandex.by/album/2577455" class="icon" target="_blank">
+      <img src="images/Music.jpg" alt="music">
+    </a>
+    <a href="https://www.tiktok.com/explore" class="icon" target="_blank">
+      <img src="images/Tiktok.jpg" class="icon"  target="_blank" alt="Tiktok">
+    </a>
+  </div>
+
+  </footer>
+
+   <a href="#" id="toTop">⬆</a>
+  <script src="astrid.js"></script>
+</body>
+</html>

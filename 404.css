@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(to top, #000000, #4f0a0a, #500202, #000);
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  color: azure;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.error-container {
+  max-width: 600px;
+  padding: 40px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
+}
+
+.error-container h1 {
+  font-size: 96px;
+  margin: 0;
+  color: goldenrod;
+  text-shadow: 0 0 20px #ff8800;
+}
+
+.error-container h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+.error-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.dragon-img {
+  width: 250px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #000;
+  margin-bottom: 30px;
+  animation: dragonFloat 4s ease-in-out infinite,
+             dragonWings 2s ease-in-out infinite;
+}
+
+
+@keyframes dragonFloat {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-10px) rotate(-2deg); }
+  50%  { transform: translateY(0) rotate(0deg); }
+  75%  { transform: translateY(10px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+
+@keyframes dragonWings {
+  0%   { transform: scaleY(1); }
+  50%  { transform: scaleY(0.95); }
+  100% { transform: scaleY(1); }
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #000000, #420000, #914f2b, #ff8800, #ffea00);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 768px) {
+  .error-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .error-container h1 {
+    font-size: 64px;
+  }
+
+  .error-container h2 {
+    font-size: 24px;
+  }
+
+  .error-container p {
+    font-size: 16px;
+  }
+
+  .dragon-img {
+    width: 180px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .error-container {
+    max-width: 80%;
+    padding: 30px;
+  }
+
+  .error-container h1 {
+    font-size: 80px;
+  }
+
+  .error-container h2 {
+    font-size: 28px;
+  }
+
+  .error-container p {
+    font-size: 17px;
+  }
+
+  .dragon-img {
+    width: 220px;
+  }
+
+  .back-btn {
+    font-size: 17px;
+    padding: 11px 22px;
+  }
+}
